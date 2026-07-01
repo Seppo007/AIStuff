@@ -50,10 +50,15 @@ Strikte Sandbox-Konfiguration. Keine Interoperabilität mit Windows-Binaries, ke
 [boot]
 systemd=true
 
+[user]
+default=seppo007
+
+# Do not allow default interaction with windows .exe files and don't populate path with host system path
 [interop]
 enabled=false
 appendWindowsPath=false
 
+# Do not automatically mount all available partitions of the host system
 [automount]
 enabled=false
 
